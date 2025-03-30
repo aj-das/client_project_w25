@@ -15,6 +15,7 @@
 
     <header>
         <nav>
+            <button id="toggle-dark" aria-label="Toggle Dark Mode">🌙</button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="umsi_tutoring.html">Tutoring & Academic Support</a></li>
@@ -22,13 +23,13 @@
                 <li><a href="caps.html" class="active">CAPS</a></li>
             </ul>
         </nav>
-        
+
     </header>
 
     <main id="main">
         <div>
             <h1>Counseling and Psychological Services (CAPS)</h1>
-            <img src = "images/CAPSlogo.png" alt="CAPS logo">
+            <img src="images/CAPSlogo.png" alt="CAPS logo">
             <p>
                 Counseling and Psychological Services (CAPS) supports the health and well-being of the University of
                 Michigan community. We aim to help students cope with life stresses, realize their potential, and build
@@ -85,6 +86,20 @@
             &copy; The Regents of the University of Michigan
         </p>
     </footer>
+
+    <script>
+        const footer = document.querySelector('footer');
+        const year = new Date().getFullYear();
+        const yearSpan = document.createElement('p');
+        yearSpan.textContent = `© ${year} UMSI Student Portal`;
+        footer.appendChild(yearSpan);
+
+        const toggleBtn = document.getElementById("toggle-dark");
+
+        toggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
 
 </body>
 

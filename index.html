@@ -16,6 +16,7 @@
     <header>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
+            <button id="toggle-dark" aria-label="Toggle Dark Mode">🌙</button>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="umsi_tutoring.html">Tutoring & Academic Support</a></li>
@@ -23,10 +24,10 @@
                 <li><a href="caps.html">CAPS</a></li>
             </ul>
         </nav>
-        
+
 
     </header>
-    
+
     <main id="main">
         <section>
             <h1>Student Success Portal</h1>
@@ -41,6 +42,7 @@
                 <li>Life Outside Classroom</li>
                 <li>Contact</li>
             </ol>
+            <img src="images/NorthQuadNight.jpg" alt="North Quad at night">
         </section>
         <section>
             <h2>Physical Health</h2>
@@ -120,6 +122,21 @@
                 href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic
                 Advising </a></p>
     </footer>
+
+    <script>
+        const footer = document.querySelector('footer');
+        const year = new Date().getFullYear();
+        const yearSpan = document.createElement('p');
+        yearSpan.textContent = `© ${year} UMSI Student Portal`;
+        footer.appendChild(yearSpan);
+
+        const toggleBtn = document.getElementById("toggle-dark");
+
+        toggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+
 </body>
 
 </html>

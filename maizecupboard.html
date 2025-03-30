@@ -16,6 +16,7 @@
     <header>
         
         <nav>
+            <button id="toggle-dark" aria-label="Toggle Dark Mode">🌙</button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="umsi_tutoring.html">Tutoring & Academic Support</a></li>
@@ -51,7 +52,7 @@
                     Aid, as well as SNAP</li>
             </ul>
         </div>
-        <div>
+        <div class="hours-location">
             <h2>Hours and Location</h2>
             <p>
                 Located in the basement of the Betsy Barbour Residence Hall, enter via the Maynard entrance. Contact us
@@ -75,6 +76,20 @@
             &copy; The Regents of the University of Michigan
         </p>
     </footer>
+    
+    <script>
+        const footer = document.querySelector('footer');
+        const year = new Date().getFullYear();
+        const yearSpan = document.createElement('p');
+        yearSpan.textContent = `© ${year} UMSI Student Portal`;
+        footer.appendChild(yearSpan);
+
+        const toggleBtn = document.getElementById("toggle-dark");
+
+        toggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
 
 </body>
 

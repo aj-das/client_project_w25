@@ -14,8 +14,9 @@
     <a class="skip" href="#main">Skip to Main Content</a>
 
     <header>
-        
+
         <nav>
+            <button id="toggle-dark" aria-label="Toggle Dark Mode">🌙</button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="umsi_tutoring.html" class="active">Tutoring & Academic Support</a></li>
@@ -23,7 +24,7 @@
                 <li><a href="caps.html">CAPS</a></li>
             </ul>
         </nav>
-    
+
     </header>
 
     <main id="main">
@@ -41,6 +42,7 @@
                 <li> Math Peer Tutoring </li>
                 <li> Additional Academic Support Resources </li>
             </ul>
+            <img src="images/resources.jpg" alt="Lecturer teaching a lecture">
         </div>
 
         <div>
@@ -63,6 +65,7 @@
                 SIADS 502. For additional questions, contact umsi.academicsuccess@umich.edu or explore
                 individual tutor booking links.
             </p>
+            <img src="images/mathPrep.jpg" alt="Tutor teaching students in class">
         </div>
 
         <div>
@@ -82,15 +85,29 @@
                 <li><a href="https://ssd.umich.edu/">SSD</a> ensures an inclusive educational environment for
                     disabled students. For more details, contact umsi.academicsuccess@umich.edu.</li>
             </ul>
-            
+
         </div>
 
     </main>
     <footer>
         <p>UMSI Tutoring & Academic Support | <a href="https://sites.google.com/umich.edu/umsitutoring/home">UMSI
-                Academic
-                Advising </a></p>
+            Academic
+            Advising </a></p>
     </footer>
+
+    <script>
+        const footer = document.querySelector('footer');
+        const year = new Date().getFullYear();
+        const yearSpan = document.createElement('p');
+        yearSpan.textContent = `© ${year} UMSI Student Portal`;
+        footer.appendChild(yearSpan);
+
+        const toggleBtn = document.getElementById("toggle-dark");
+
+        toggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
 
 </body>
 
