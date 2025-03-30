@@ -185,14 +185,42 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* 404 page */
+body.error-404 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 160px;
+    text-align: center;
+}
+
+body.error-404 h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #00274c;
+}
+
+body.error-404 p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+body.error-404 a {
+    color: #ffcb05;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 /* dark mode */
-/* === DARK MODE STYLES === */
 body.dark-mode {
     background-color: #121212;
     color: #e0e0e0;
 }
 
-body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
     color: #ffcb05;
 }
 
