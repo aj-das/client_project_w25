@@ -207,7 +207,7 @@ body.error-404 p {
 }
 
 body.error-404 a {
-    color: #ffcb05;
+    color: #ff0404;
     text-decoration: underline;
     font-weight: bold;
 }
