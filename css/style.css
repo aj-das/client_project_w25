@@ -103,7 +103,6 @@ nav ul li a.active {
 }
 
 /* main */
-
 main {
     width: 90%;
     max-width: 1100px;
@@ -186,7 +185,6 @@ footer a:hover {
 }
 
 /* 404 page */
-
 #not-found {
     display: flex;
     flex-direction: column;
@@ -259,7 +257,7 @@ body.dark-mode img {
 }
 
 
-
+/* tablet and desktop */
 @media (min-width: 768px) {
     body {
         justify-content: center;
