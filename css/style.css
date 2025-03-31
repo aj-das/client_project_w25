@@ -238,16 +238,15 @@ body.dark-mode nav a.active {
     color: black;
 }
 
-/* Optional: dark mode images if you want */
 body.dark-mode img {
     opacity: 0.9;
     filter: brightness(0.9);
 }
 
-/* Style the toggle button itself */
+/* toggle button */
 #toggle-dark {
-    background: #ffcb05;
-    color: #00274c;
+    background: #00274c;
+    color: #ffcb05;
     border: none;
     padding: 8px 12px;
     border-radius: 5px;
@@ -258,6 +257,7 @@ body.dark-mode img {
 
 #toggle-dark:hover {
     background-color: #ffcb05;
+    color: #00274c;
 }
 
 
