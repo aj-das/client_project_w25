@@ -7,26 +7,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="error-404">
-    <main>
-        
-            <h1>404 - Page Not Found</h1>
-            <p>Oops! We couldn't find the page you were looking for.</p>
-            <a href="index.html">Return to Home</a>
+<body>
+    <main id="not-found">
+
+        <h1>404 - Page Not Found</h1>
+        <p>Oops! We couldn't find the page you were looking for.</p>
+        <a href="index.html">Return to Home</a>
     </main>
 
-    <footer>
-        <p>MSI Academic Advising | <a
-                href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic
-                Advising </a></p>
-    </footer>
 
     <script>
         const footer = document.querySelector('footer');
         const year = new Date().getFullYear();
-        const yearSpan = document.createElement('p');
-        yearSpan.textContent = `© ${year} UMSI Student Portal`;
-        footer.appendChild(yearSpan);
+        document.getElementById("copyright").textContent = `© ${year} UMSI Student Portal`;
 
         const toggleBtn = document.getElementById("toggle-dark");
 

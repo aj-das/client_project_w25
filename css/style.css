@@ -186,28 +186,26 @@ footer a:hover {
 }
 
 /* 404 page */
-body.error-404 main {
+
+#not-found {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 160px;
     text-align: center;
 }
 
-body.error-404 h1 {
+#not-found h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
     color: #00274c;
 }
 
-body.error-404 p {
+#not-found p {
     font-size: 1.25rem;
-    margin-bottom: 1rem;
 }
 
-body.error-404 a {
-    color: #ff0000;
+#not-found a {
+    color: #00274c;
     text-decoration: underline;
     font-weight: bold;
 }
